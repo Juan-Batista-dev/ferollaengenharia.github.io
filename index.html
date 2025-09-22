@@ -5,18 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferolla Engenharia e Construtora</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Ferolla Engenharia e Construtora - Projetos, obras executadas e serviços de engenharia com qualidade e confiança. Solicite seu orçamento.">
+  <meta name="description" content="Ferolla Engenharia e Construtora - Obras executadas, projetos de engenharia, construção civil. Solicite seu orçamento.">
 </head>
 <body>
   <!-- Cabeçalho -->
   <header class="topo">
     <div class="logo">Ferolla Engenharia e Construtora</div>
     <nav>
-      <ul>
-        <li><a href="#sobre">Quem Somos</a></li>
-        <li><a href="#projetos">Projetos Executados</a></li>
-        <li><a href="#contato">Orçamento</a></li>
-      </ul>
+      <a href="#sobre">Quem Somos</a> |
+      <a href="#projetos">Projetos Executados</a> |
+      <a href="#contato">Orçamento</a>
     </nav>
   </header>
 
@@ -33,22 +31,80 @@
   <section id="sobre" class="sobre">
     <h2>Quem Somos</h2>
     <p>
-      A <strong>Ferolla Engenharia e Construtora</strong> atua no mercado de Bonito-MS e Região com soluções completas. 
+      A <strong>Ferolla Engenharia e Construtora</strong> atua no mercado com soluções completas em engenharia. 
       Realizamos obras residenciais, comerciais e corporativas, sempre prezando pela qualidade e pelo compromisso com nossos clientes.
     </p>
   </section>
 
-  <!-- Projetos -->
+  <!-- Projetos Executados -->
   <section id="projetos" class="projetos">
     <h2>Projetos Executados</h2>
-    <div class="galeria">
-      <img src="https://source.unsplash.com/400x300/?building,construction" alt="Projeto 1">
-      <img src="https://source.unsplash.com/400x300/?architecture,house" alt="Projeto 2">
-      <img src="https://source.unsplash.com/400x300/?apartment,building" alt="Projeto 3">
-      <img src="https://source.unsplash.com/400x300/?interior,design" alt="Projeto 4">
-      <img src="https://source.unsplash.com/400x300/?office,architecture" alt="Projeto 5">
-      <img src="https://source.unsplash.com/400x300/?construction,site" alt="Projeto 6">
-    </div>
+
+    <!-- Projeto 1 -->
+    <article class="projeto">
+      <h3>Clínica MedLume</h3>
+      <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?clinic,hospital" alt="Clínica MedLume">
+        <img src="https://source.unsplash.com/400x300/?architecture,health" alt="Clínica MedLume">
+      </div>
+      <p>
+        Uma das maiores obras executadas pela <strong>Ferolla Engenharia e Construtora</strong>, localizada no centro de Bonito. 
+        Projeto moderno, funcional e adaptado para atender às necessidades da área da saúde.
+      </p>
+    </article>
+
+    <!-- Projeto 2 -->
+    <article class="projeto">
+      <h3>Madam Joias</h3>
+      <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?jewelry,store" alt="Madam Joias">
+        <img src="https://source.unsplash.com/400x300/?interior,shop" alt="Madam Joias">
+      </div>
+      <p>
+        Espaço planejado com sofisticação, voltado para o setor de joalheria. 
+        Ambiente elegante que reflete a exclusividade da marca.
+      </p>
+    </article>
+
+    <!-- Projeto 3 -->
+    <article class="projeto">
+      <h3>Supermercado Karinne</h3>
+      <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?supermarket,market" alt="Supermercado Karinne">
+        <img src="https://source.unsplash.com/400x300/?grocery,store" alt="Supermercado Karinne">
+      </div>
+      <p>
+        Projeto arquitetônico para um dos maiores supermercados da região. 
+        Planejamento otimizado para circulação, layout de gôndolas e aproveitamento do espaço.
+      </p>
+    </article>
+
+    <!-- Projeto 4 -->
+    <article class="projeto">
+      <h3>To a Toa Bar</h3>
+      <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?bar,pub" alt="To a Toa Bar">
+        <img src="https://source.unsplash.com/400x300/?restaurant,design" alt="To a Toa Bar">
+      </div>
+      <p>
+        Projeto e execução completos do <strong>To a Toa Bar</strong>. 
+        Espaço descontraído, com design moderno e ambientes integrados para oferecer conforto aos clientes.
+      </p>
+    </article>
+
+    <!-- Projeto 5 -->
+    <article class="projeto">
+      <h3>Casas Residenciais</h3>
+      <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?house,residential" alt="Residência">
+        <img src="https://source.unsplash.com/400x300/?modern,home" alt="Residência Moderna">
+        <img src="https://source.unsplash.com/400x300/?villa,architecture" alt="Residência de Alto Padrão">
+      </div>
+      <p>
+        Diversas casas residenciais planejadas e executadas pela <strong>Ferolla Engenharia e Construtora</strong>, 
+        unindo funcionalidade, conforto e design moderno.
+      </p>
+    </article>
   </section>
 
   <!-- Contato / Orçamento -->
@@ -56,6 +112,7 @@
     <h2>Solicite seu Orçamento</h2>
     <form>
       <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
       <input type="tel" placeholder="Telefone" required>
       <textarea placeholder="Descreva seu projeto"></textarea>
       <button type="submit">Enviar Solicitação</button>

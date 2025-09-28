@@ -10,6 +10,7 @@ body {
   background: #f5f5f5;
   color: #333;
 }
+
 /* ===== Cabeçalho ===== */
 header {
   background: #0a1a2f;
@@ -17,7 +18,7 @@ header {
   padding: 20px 60px;
   display: flex;
   flex-direction: column; /* título em cima, links embaixo */
-  align-items: center;    /* centraliza tudo */
+  align-items: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   gap: 10px;
 }
@@ -31,9 +32,9 @@ header h1 {
 
 nav {
   display: flex;
-  flex-wrap: wrap;         /* permite quebrar linha se não couber */
-  gap: 15px;               /* espaço entre os links */
-  justify-content: center; /* centraliza links */
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
   font-weight: 500;
 }
 
@@ -77,7 +78,6 @@ nav a:last-child::after {
     content: '';
   }
 }
-
 
 /* ===== Seções ===== */
 section {
@@ -200,28 +200,14 @@ h2 {
 
 /* ===== Logo Intro ===== */
 .logo-intro {
-  width: 50vw;        /* largura relativa à tela */
+  width: 50vw;
   max-width: 1200px;
   height: auto;
   opacity: 0;
   animation: fadeInScale 2s ease forwards;
 }
 
-/* ===== Ajuste Responsivo ===== */
-@media (max-width: 768px) {
-  .logo-intro {
-    width: 80vw;       /* aumenta a imagem em telas menores */
-    max-width: 400px;  /* limita para não ficar gigante */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-intro {
-    width: 90vw;       /* quase toda largura da tela */
-    max-width: 350px;
-  }
-}
-
+/* ===== Slogan e ações ===== */
 .intro-actions {
   display: flex;
   flex-direction: row;
@@ -238,6 +224,35 @@ h2 {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   animation-delay: 1.5s;
+}
+
+/* ===== Responsivo Intro ===== */
+@media (max-width: 768px) {
+  .logo-intro {
+    width: 80vw;
+    max-width: 400px;
+  }
+
+  .intro-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .slogan-intro {
+    font-size: 1.3rem;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-intro {
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  .slogan-intro {
+    font-size: 1.2rem;
+  }
 }
 
 /* ===== Áreas de Atuação ===== */
@@ -378,92 +393,5 @@ h2 {
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #fff;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-}
-
-
-#orcamento p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#orcamento a {
-  display: inline-block;
-  padding: 15px 35px;
-  background: #25D366;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-}
-
-#orcamento a:hover {
-  background: #1ebe57;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-/* ===== Responsivo ===== */
-@media (max-width: 768px) {
-  #orcamento h2 {
-    font-size: 28px;
-  }
-  
-  #orcamento p {
-    font-size: 16px;
-  }
-
-  #orcamento a {
-    font-size: 16px;
-    padding: 12px 25px;
-  }
-
-  .intro-actions {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .slogan-intro {
-    white-space: normal;
-  }
-}
-
-/* ===== Animações ===== */
-@keyframes fadeInScale {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-
+  color: #fff; /* título branco */
+  text-shadow: 1px 1px 5

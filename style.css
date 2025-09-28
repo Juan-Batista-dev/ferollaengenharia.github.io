@@ -324,7 +324,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 1px;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-  color: #white
+   color: #ffffff;
 }
 
 #orcamento p {
@@ -407,4 +407,5 @@ h2 {
     transform: translateY(0);
   }
 }
+
 

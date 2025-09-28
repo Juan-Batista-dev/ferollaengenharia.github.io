@@ -78,6 +78,7 @@ nav a:last-child::after {
   }
 }
 
+
 /* ===== Seções ===== */
 section {
   padding: 60px 10%;
@@ -197,12 +198,28 @@ h2 {
   gap: 20px;  
 }
 
+/* ===== Logo Intro ===== */
 .logo-intro {
-  width: 50vw;
+  width: 50vw;        /* largura relativa à tela */
   max-width: 1200px;
   height: auto;
   opacity: 0;
   animation: fadeInScale 2s ease forwards;
+}
+
+/* ===== Ajuste Responsivo ===== */
+@media (max-width: 768px) {
+  .logo-intro {
+    width: 80vw;       /* aumenta a imagem em telas menores */
+    max-width: 400px;  /* limita para não ficar gigante */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-intro {
+    width: 90vw;       /* quase toda largura da tela */
+    max-width: 350px;
+  }
 }
 
 .intro-actions {
@@ -446,6 +463,7 @@ h2 {
     transform: translateY(0);
   }
 }
+
 
 
 

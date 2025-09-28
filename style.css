@@ -42,6 +42,36 @@ h2 {
   color: #0a1a2f;
 }
 
+/* ===== QUEM SOMOS ===== */
+#quem-somos {
+  padding: 80px 10%;
+  background: #ffffff;
+  color: #0a1a2f;
+}
+
+#quem-somos h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #0a1a2f;
+}
+
+#quem-somos p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#quem-somos a {
+  color: #0a1a2f;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#quem-somos a:hover {
+  color: #1f2f45;
+}
+
 /* ===== Cards ===== */
 .cards {
   display: grid;
@@ -95,4 +125,281 @@ h2 {
   padding: 15px;
   font-size: 15px;
   line-height: 1.5;
+}
+
+#intro {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0d1324;
+  color: white;
+  text-align: center;
+  gap: 20px;  
+}
+
+
+.logo-intro {
+  width: 50vw;        /* 90% da largura da tela */
+  max-width: 1200px;  /* até 1200px em monitores grandes */
+    height: auto;
+  opacity: 0;
+  animation: fadeInScale 2s ease forwards;
+}
+/* Contêiner para slogan + botão */
+.intro-actions {
+  display: flex;
+  flex-direction: row;     /* força em linha */
+  align-items: center;     /* alinha no centro vertical */
+  justify-content: center; /* centraliza no meio da tela */
+  gap: 25px;               /* espaço entre slogan e botão */
+  margin-top: 0px;
+  flex-wrap: nowrap;       /* impede quebrar linha */
+}
+
+.slogan-intro {
+  font-size: 1.4rem;
+  white-space: nowrap;     /* evita quebra de linha */
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 1.5s;
+}
+/* ===== Animations ===== */
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ===== ÁREAS DE ATUAÇÃO ===== */
+#atuacao {
+  background: #f9f9f9;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+#atuacao h2 {
+  font-size: 32px;
+  color: #0a1a2f;
+  margin-bottom: 15px;
+}
+
+.atuacao-subtitulo {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.atuacao-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.atuacao-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.atuacao-card:nth-child(1) { animation-delay: 0.2s; }
+.atuacao-card:nth-child(2) { animation-delay: 0.4s; }
+.atuacao-card:nth-child(3) { animation-delay: 0.6s; }
+.atuacao-card:nth-child(4) { animation-delay: 0.8s; }
+.atuacao-card:nth-child(5) { animation-delay: 1s; }
+.atuacao-card:nth-child(6) { animation-delay: 1.2s; }
+
+.atuacao-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.atuacao-card i {
+  font-size: 42px;
+  color: #0a1a2f;
+  margin-bottom: 15px;
+}
+
+.atuacao-card h3 {
+  font-size: 20px;
+  color: #0a1a2f;
+  margin-bottom: 10px;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.atuacao-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-play-state: paused; /* inicia pausado */
+}
+
+.atuacao-card.visible {
+  animation-play-state: running; /* inicia quando entra na viewport */
+}
+
+#piscinas-naturais {
+  padding: 80px 10%;
+  text-align: center;
+  background: #eef3fa;
+}
+
+.piscinas-titulo {
+  font-size: 36px;
+  color: #0a1a2f;
+  margin-bottom: 40px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Galeria de imagens */
+.piscinas-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.piscinas-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* animação de fadeUp para as imagens */
+.piscinas-galeria img:nth-child(1) { animation-delay: 0.3s; }
+.piscinas-galeria img:nth-child(2) { animation-delay: 0.6s; }
+.piscinas-galeria img:nth-child(3) { animation-delay: 0.9s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Botão WhatsApp flutuante */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;   /* cor verde WhatsApp */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+/* Ícone dentro do botão */
+.whatsapp-icone {
+  width: 32px;   /* ajusta conforme desejar */
+  height: 32px;
+}
+
+/* ===== Seção Orçamento ===== */
+#orcamento {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0a1a2f, #1f2f45);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#orcamento h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+#orcamento p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f0f0f0;
+}
+
+#orcamento a {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #25D366; /* verde WhatsApp */
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#orcamento a:hover {
+  background: #1ebe57;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #orcamento h2 {
+    font-size: 28px;
+  }
+  
+  #orcamento p {
+    font-size: 16px;
+  }
+
+  #orcamento a {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
 }

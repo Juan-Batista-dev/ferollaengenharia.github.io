@@ -13,11 +13,11 @@ body {
 
 /* ===== Cabeçalho ===== */
 header {
-  background: #0a1a2f;
+  background: #0d1324;
   color: #fff;
   padding: 20px 60px;
   display: flex;
-  flex-direction: column; /* título em cima, links embaixo */
+  flex-direction: column; 
   align-items: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   gap: 10px;
@@ -48,7 +48,6 @@ nav a:hover {
   color: #ccc;
 }
 
-/* Remove qualquer pipe final ou espaço estranho */
 nav a:last-child::after {
   content: none;
 }
@@ -96,18 +95,37 @@ h2 {
   padding: 80px 10%;
   background: #fff;
   color: #0a1a2f;
+  padding: 80px 10%;
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 #quem-somos h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-  text-align: center;
+  font-size: 18px;
+  color: #0a1a2f;
+  margin-bottom: 40px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease forwards;
+  display: inline-block;
+  padding: 15px 35px;
+  background: radial-gradient(circle, #1c2745 0%, #0d1324 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+ 
 }
 
 #quem-somos p {
   font-size: 17px;
   line-height: 1.8;
   margin-bottom: 20px;
+   text-align: left;
 }
 
 #quem-somos a {
@@ -264,16 +282,31 @@ h2 {
 }
 
 /* ===== Áreas de Atuação ===== */
-#atuacao {
-  background: #f9f9f9;
-  padding: 80px 10%;
+#servicos {
+    padding: 80px 10%;
   text-align: center;
+  background: #f5f5f5;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-#atuacao h2 {
-  font-size: 32px;
+#servicos h2 {
+    font-size: 18px;
   color: #0a1a2f;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease forwards;
+    display: inline-block;
+  padding: 15px 35px;
+ background: radial-gradient(circle, #1c2745 0%, #0d1324 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  
 }
 
 .atuacao-subtitulo {
@@ -325,17 +358,30 @@ h2 {
 
 /* ===== Piscinas Naturais ===== */
 #piscinas-naturais {
-  padding: 80px 10%;
+    padding: 80px 10%;
   text-align: center;
-  background: #eef3fa;
+  background: #f5f5f5;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .piscinas-titulo {
-  font-size: 36px;
+  font-size: 18px;
   color: #0a1a2f;
   margin-bottom: 40px;
   font-weight: 700;
   animation: fadeInUp 1s ease forwards;
+    display: inline-block;
+  padding: 15px 35px;
+ background: radial-gradient(circle, #1c2745 0%, #0d1324 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  
 }
 
 .piscinas-galeria {
@@ -387,15 +433,17 @@ h2 {
 
 /* ===== Orçamento ===== */
 #orcamento {
-  padding: 80px 10%;
-  background: linear-gradient(135deg, #0a1a2f, #1f2f45);
+  width: 80%;            /* ocupa 80% da largura da tela */
+  max-width: 1280px;      /* não ultrapassa 600px */
+  padding: 40px 10%;     
+  background: radial-gradient(circle at center, #1c2f4a 20%, #0a1a2f 100%);
   color: #fff;
   text-align: center;
   border-radius: 20px;
-  margin: 60px auto;
+  margin: 40px auto;     /* centraliza horizontalmente */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-sizing: border-box;
 }
-
 #orcamento h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -632,4 +680,34 @@ h2 {
     align-items: center;
     text-align: center;
   }
+}
+
+/* ===== Quem Somos ===== */
+#projetos {
+  padding: 80px 10%;
+  background: #fff;
+  color: #0a1a2f;
+     padding: 80px 10%;
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#projetos h2 {
+  font-size: 18px;
+  color: #0a1a2f;
+  margin-bottom: 40px;
+  font-weight: 700;
+  animation: fadeInUp 1s ease forwards;
+    display: inline-block;
+  padding: 15px 35px;
+ background: radial-gradient(circle, #1c2745 0%, #0d1324 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }

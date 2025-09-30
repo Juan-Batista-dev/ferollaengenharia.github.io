@@ -330,6 +330,7 @@ h2 {
   opacity: 0;
   transform: translateY(40px);
   animation: fadeUp 1s ease forwards;
+  text-align: left;
 }
 
 .atuacao-card:nth-child(1) { animation-delay: 0.2s; }
